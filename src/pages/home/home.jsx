@@ -69,7 +69,7 @@ const Home = () => {
             marginBottom: "1.5rem",
             lineHeight: 1.2
           }}>
-            Elevating Businesses Through <span style={{ borderBottom: "4px solid #93C5FD" }}>Innovative Solutions</span>
+            Elevating Businesses Through <span >Innovative Solutions</span>
           </h1>
           <p style={{
             fontSize: "1.25rem",

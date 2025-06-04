@@ -113,28 +113,34 @@
 }
 
 .mobile-menu {
-  display: none;
-  padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100vh;
   background: white;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  border-radius: 0.375rem;
-  margin-top: 0.5rem;
+  box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1rem;
+  z-index: 1050;
+  transition: right 0.3s ease;
 }
 
 .mobile-menu.open {
-  display: block;
+  right: 0;
 }
 
 .mobile-nav-link {
   display: block;
-  color: #111827;
-  padding: 0.75rem 1rem;
-  border-radius: 0.375rem;
-  font-size: 1rem;
-  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #1f2937;
   text-decoration: none;
-  transition: all 0.3s ease;
-  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.mobile-cta-button {
+  margin-top: 1rem;
+  width: 100%;
 }
 
 .mobile-nav-link:hover {
