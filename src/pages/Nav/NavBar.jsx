@@ -142,7 +142,7 @@ const NavBar = () => {
             <span style={{ color: '#1D4ED8' }}>Corporate</span>Solutions
           </Link>
 
-          <div className="desktop-menu">
+          {/* <div className="desktop-menu">
             <Link to="/" className="nav-link">
               Home
             </Link>
@@ -158,8 +158,101 @@ const NavBar = () => {
             <button className="cta-button">
               Get Started <FiArrowRight style={{ marginLeft: '4px' }} />
             </button>
-          </div>
-
+          </div> */}
+<div className="desktop-menu" style={{
+  display: 'flex',
+  alignItems: 'center',
+  gap: '2rem',
+  fontFamily: 'Inter, -apple-system, sans-serif' // Ensures font consistency
+}}>
+  <Link 
+    to="/" 
+    className="nav-link"
+    style={{
+      fontSize: '1rem',
+      fontWeight: '500',
+      color: '#1a1a1a',
+      textDecoration: 'none',
+      transition: 'color 0.2s ease',
+      ':hover': {
+        color: '#4f46e5'
+      }
+    }}
+  >
+    Home
+  </Link>
+  <Link 
+    to="/about" 
+    className="nav-link"
+    style={{
+      fontSize: '1rem',
+      fontWeight: '500',
+      color: '#1a1a1a',
+      textDecoration: 'none',
+      transition: 'color 0.2s ease',
+      ':hover': {
+        color: '#4f46e5'
+      }
+    }}
+  >
+    About
+  </Link>
+  <Link 
+    to="/services" 
+    className="nav-link"
+    style={{
+      fontSize: '1rem',
+      fontWeight: '500',
+      color: '#1a1a1a',
+      textDecoration: 'none',
+      transition: 'color 0.2s ease',
+      ':hover': {
+        color: '#4f46e5'
+      }
+    }}
+  >
+    Services
+  </Link>
+  <Link 
+    to="/contact" 
+    className="nav-link"
+    style={{
+      fontSize: '1rem',
+      fontWeight: '500',
+      color: '#1a1a1a',
+      textDecoration: 'none',
+      transition: 'color 0.2s ease',
+      ':hover': {
+        color: '#4f46e5'
+      }
+    }}
+  >
+    Contact
+  </Link>
+  <button 
+    className="cta-button"
+    style={{
+      fontSize: '1rem',
+      fontWeight: '500',
+      fontFamily: 'inherit', // Inherits from parent
+      padding: '0.5rem 1.25rem',
+      backgroundColor: '#4f46e5',
+      color: 'white',
+      border: 'none',
+      borderRadius: '0.375rem',
+      cursor: 'pointer',
+      transition: 'all 0.2s ease',
+      display: 'flex',
+      alignItems: 'center',
+      ':hover': {
+        backgroundColor: '#4338ca',
+        transform: 'translateY(-1px)'
+      }
+    }}
+  >
+    Get Started <FiArrowRight style={{ marginLeft: '4px', fontSize: '1rem' }} />
+  </button>
+</div>
           <button
             className="mobile-menu-button"
             onClick={() => setIsOpen(!isOpen)}
